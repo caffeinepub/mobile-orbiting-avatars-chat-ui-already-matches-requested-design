@@ -1,2 +1,3 @@
-# mobile-orbiting-avatars-chat-ui-already-matches-requested-design
-Exported from Caffeine project: Mobile orbiting avatars chat UI (already matches requested design)
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

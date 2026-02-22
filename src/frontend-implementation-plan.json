@@ -1,0 +1,38 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update Join button to redirect to Google Form",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Remove the 'coming soon' alert from the Join button in WaitlistCTA component",
+      "acceptanceCriteria": [
+        "Clicking the Join button no longer triggers any alert",
+        "No 'coming soon' text appears when the button is clicked"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/orbit/WaitlistCTA.tsx",
+          "operation": "modify",
+          "description": "Remove the alert handler from the Join button's onClick event. Delete any alert() or window.alert() calls that display 'coming soon' messaging when the button is clicked."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Make the Join button redirect to Google Form URL when clicked",
+      "acceptanceCriteria": [
+        "Clicking the Join button opens https://forms.gle/nD95mzMCvfRbBFZV7 in a new tab",
+        "The redirect happens immediately on button click",
+        "The original page remains open while the form opens in a new tab"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/orbit/WaitlistCTA.tsx",
+          "operation": "modify",
+          "description": "Update the Join button's onClick handler to open https://forms.gle/nD95mzMCvfRbBFZV7 in a new tab using window.open() with '_blank' target. Ensure existing button styling, animations, and glow effects are preserved."
+        }
+      ]
+    }
+  ]
+}

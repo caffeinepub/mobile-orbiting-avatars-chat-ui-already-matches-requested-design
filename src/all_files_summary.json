@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend entry point with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report documenting two completed features: removing the 'coming soon' alert and adding Google Form redirect to the WaitlistCTA Join button.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of all frontend files describing the ORBIT space-themed social network UI with glassmorphism, animations, and waitlist functionality.",
+  "frontend/index.css": "Tailwind CSS configuration with OKLCH color system defining light and dark theme variables for the Space-Tech aesthetic.",
+  "frontend/index.html": "Minimal HTML entry point that loads the React app into a root div and imports the main TypeScript module.",
+  "frontend/src/App.tsx": "Root React component that renders the OrbitScreen component and imports global styles.",
+  "frontend/src/components/orbit/AvatarBadge.tsx": "Reusable avatar component with image loading, fallback initials, configurable sizes, neon borders, and online/offline status indicators.",
+  "frontend/src/components/orbit/ChatOverlay.tsx": "Modal chat overlay with glassmorphic styling, friend header, message area, input form, and smooth open/close animations.",
+  "frontend/src/components/orbit/GlassPanel.tsx": "Simple wrapper component that applies glassmorphic styling with backdrop blur to its children.",
+  "frontend/src/components/orbit/OrbitAvatars.tsx": "Component displaying a central user avatar with five friend avatars orbiting around it using CSS animations with staggered delays.",
+  "frontend/src/components/orbit/OrbitScreen.tsx": "Main screen component managing friend data state, coordinating all child components (Starfield, OrbitAvatars, ChatOverlay, WaitlistCTA), and handling friend click interactions.",
+  "frontend/src/components/orbit/Starfield.tsx": "Canvas-based animated starfield background with slow-drifting, twinkling stars optimized for performance using throttled animation loop and proper cleanup.",
+  "frontend/src/components/orbit/WaitlistCTA.tsx": "Bottom-positioned button with pulsing glow animation that redirects to Google Form waitlist, includes hover effects and footer attribution with caffeine.ai link.",
+  "frontend/src/hooks/useActor.ts": "React Query hook for managing ICP backend actor instances with Internet Identity authentication, automatic refetching on identity changes, and query invalidation.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React hook and provider for Internet Identity authentication on ICP, managing login state, identity persistence, and delegation validation with AuthClient.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder hook for backend integration that currently returns actor and fetching state from useActor, with no active backend data requirements.",
+  "frontend/src/index.css": "Tailwind CSS configuration with cosmic/neon theme using OKLCH colors (purple, blue, cyan), glassmorphism utilities, and neon glow effects for a futuristic UI.",
+  "frontend/src/main.tsx": "Application entry point that renders the root component wrapped with QueryClientProvider and InternetIdentityProvider for state management and authentication.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with OKLCH color system, custom neon shadows, orbital animations, and responsive container settings.",
+  "project_state.json": "Project metadata tracking completed features (removing 'coming soon' alert, adding Google Form redirect) and pending feature request AR-1 for the Join button update."
+}

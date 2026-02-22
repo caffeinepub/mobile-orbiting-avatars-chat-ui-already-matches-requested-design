@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        
+        /* Cosmic background - deep black */
+        --background: 0.05 0 0;
+        --foreground: 0.98 0 0;
+        
+        /* Neon Purple accent */
+        --primary: 0.65 0.28 290;
+        --primary-foreground: 0.98 0 0;
+        
+        /* Electric Blue accent */
+        --secondary: 0.70 0.25 240;
+        --secondary-foreground: 0.98 0 0;
+        
+        /* Neon Cyan for chat borders */
+        --accent: 0.75 0.20 195;
+        --accent-foreground: 0.98 0 0;
+        
+        /* Glass morphism colors */
+        --card: 0.15 0 0 / 0.3;
+        --card-foreground: 0.98 0 0;
+        --popover: 0.15 0 0 / 0.4;
+        --popover-foreground: 0.98 0 0;
+        
+        --muted: 0.25 0 0 / 0.5;
+        --muted-foreground: 0.70 0 0;
+        
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        
+        --border: 0.30 0 0 / 0.3;
+        --input: 0.30 0 0 / 0.3;
+        --ring: 0.65 0.28 290;
+        
+        /* Sidebar (not used but keeping for consistency) */
+        --sidebar: 0.15 0 0;
+        --sidebar-foreground: 0.98 0 0;
+        --sidebar-primary: 0.65 0.28 290;
+        --sidebar-primary-foreground: 0.98 0 0;
+        --sidebar-accent: 0.25 0 0;
+        --sidebar-accent-foreground: 0.98 0 0;
+        --sidebar-border: 0.30 0 0 / 0.3;
+        --sidebar-ring: 0.65 0.28 290;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    html, body, #root {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Glassmorphism utility classes */
+@layer utilities {
+    .glass {
+        background: oklch(var(--card));
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid oklch(var(--border));
+    }
+    
+    .glass-strong {
+        background: oklch(0.15 0 0 / 0.5);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border: 1px solid oklch(var(--border));
+    }
+    
+    .neon-glow-purple {
+        box-shadow: 0 0 20px oklch(var(--primary) / 0.5),
+                    0 0 40px oklch(var(--primary) / 0.3),
+                    0 0 60px oklch(var(--primary) / 0.1);
+    }
+    
+    .neon-glow-blue {
+        box-shadow: 0 0 20px oklch(var(--secondary) / 0.5),
+                    0 0 40px oklch(var(--secondary) / 0.3),
+                    0 0 60px oklch(var(--secondary) / 0.1);
+    }
+    
+    .neon-glow-cyan {
+        box-shadow: 0 0 20px oklch(var(--accent) / 0.6),
+                    0 0 40px oklch(var(--accent) / 0.4),
+                    0 0 60px oklch(var(--accent) / 0.2);
+    }
+}
+
+/* Smooth transitions for chat overlay */
+.chat-overlay-enter {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.chat-overlay-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+
+.chat-overlay-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.chat-overlay-exit-active {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 250ms ease-in, transform 250ms ease-in;
+}

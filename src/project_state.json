@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-remove-the-coming-soon-alert-from-the-join-button-in-waitlistcta-component",
+      "title": "Remove the 'coming soon' alert from the Join button in WaitlistCTA component",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-make-the-join-button-redirect-to-https-forms-gle-nd95mzmcvfrbbfzv7-when-clicked",
+      "title": "Make the Join button redirect to https://forms.gle/nD95mzMCvfRbBFZV7 when clicked",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Update Join button to redirect to Google Form instead of showing 'coming soon' alert",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Update Join button to redirect to Google Form",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

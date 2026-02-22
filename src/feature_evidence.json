@@ -1,0 +1,41 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-remove-the-coming-soon-alert-from-the-join-button-in-waitlistcta-component",
+      "featureTitle": "Remove the 'coming soon' alert from the Join button in WaitlistCTA component",
+      "files": [
+        "frontend/src/components/orbit/WaitlistCTA.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-make-the-join-button-redirect-to-https-forms-gle-nd95mzmcvfrbbfzv7-when-clicked",
+      "featureTitle": "Make the Join button redirect to https://forms.gle/nD95mzMCvfRbBFZV7 when clicked",
+      "files": [
+        "frontend/src/components/orbit/WaitlistCTA.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "frontend/src/App.tsx": "Main application entry point that renders the OrbitScreen component with minimal wrapper.",
+  "frontend/src/index.css": "Global styles with OKLCH color system defining Space-Tech theme (Neon Purple, Electric Blue, Neon Cyan), glassmorphism utilities, and cosmic black background.",
+  "frontend/tailwind.config.js": "Extended Tailwind configuration with custom animations (orbit, pulse-glow, star-drift, twinkle), neon shadow utilities, and Space-Tech color tokens.",
+  "frontend/src/components/orbit/OrbitScreen.tsx": "Main screen component managing the ORBIT interface state, friend data, and coordinating all child components (starfield, avatars, chat, CTA).",
+  "frontend/src/components/orbit/Starfield.tsx": "Canvas-based animated starfield background with slow-drifting, twinkling stars optimized for performance with throttled animation loop and proper TypeScript typing for refs.",
+  "frontend/src/components/orbit/OrbitAvatars.tsx": "Central user avatar with 5 friend avatars orbiting in 3D-like circular motion using CSS animations with staggered delays and depth effects.",
+  "frontend/src/components/orbit/AvatarBadge.tsx": "Reusable avatar component with image loading, fallback initials, neon borders, and online/offline status indicators.",
+  "frontend/src/components/orbit/ChatOverlay.tsx": "Translucent chat window overlay with neon cyan borders, smooth expand/collapse animations, message input, and close functionality.",
+  "frontend/src/components/orbit/GlassPanel.tsx": "Reusable glassmorphic panel wrapper component with backdrop blur and translucent styling for Space-Tech aesthetic.",
+  "frontend/src/components/orbit/WaitlistCTA.tsx": "Bottom-positioned \"Join the Waitlist\" button with pulsing glow effect that redirects to Google Form (https://forms.gle/nD95mzMCvfRbBFZV7) in a new tab, includes footer attribution with caffeine.ai link.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for future backend integration hooks using React Query (currently UI-only app)."
+}

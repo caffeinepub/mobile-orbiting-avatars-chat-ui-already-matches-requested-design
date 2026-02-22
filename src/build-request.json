@@ -1,0 +1,55 @@
+{
+  "kind": "build_request",
+  "title": "Update Join button to redirect to Google Form",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Remove the 'coming soon' alert from the Join button in WaitlistCTA component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-7"
+        ],
+        "quotes": [
+          "The current 'Join' button shows a 'coming soon' alert. Please remove that alert entirely."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Clicking the Join button no longer triggers any alert",
+        "No 'coming soon' text appears when the button is clicked"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Make the Join button redirect to https://forms.gle/nD95mzMCvfRbBFZV7 when clicked",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-7"
+        ],
+        "quotes": [
+          "Instead, make the button redirect to this URL when clicked:(https://forms.gle/nD95mzMCvfRbBFZV7)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Clicking the Join button opens https://forms.gle/nD95mzMCvfRbBFZV7 in a new tab",
+        "The redirect happens immediately on button click",
+        "The original page remains open while the form opens in a new tab"
+      ]
+    }
+  ],
+  "constraints": [
+    "Only modify the WaitlistCTA component button behavior",
+    "Preserve all existing button styling and animations"
+  ],
+  "nonGoals": [
+    "Changing the button text or appearance",
+    "Adding form validation or data collection",
+    "Modifying any other components"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
